@@ -197,7 +197,7 @@
 
     <div class="hero">
         <div class="hero-container">
-            <video id="backgroundVideo" loop autoplay class="background-video">
+            <video id="backgroundVideo" muted loop autoplay class="background-video">
                 <source src="INTRO.mp4" type="video/mp4">
             </video>
             <div class="hero-buttons animate__animated animate__fadeInUp">
@@ -422,17 +422,7 @@
             </div>
         </div>
     </section>
-
-    <script>
-        const video = document.getElementById('backgroundVideo');
-        let primeraReproduccion = true;
-        video.addEventListener('timeupdate', () => {
-            if (primeraReproduccion && video.currentTime >= 4.9) {
-                video.muted = true;
-                primeraReproduccion = false;
-            }
-        });
-    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
