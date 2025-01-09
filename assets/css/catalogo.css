@@ -1,0 +1,162 @@
+.catalog {
+    font-family: "Poppins", sans-serif;
+}
+
+.carousel-caption {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+}
+
+.carousel-caption h3 {
+    color: #ffffff;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2em;
+    font-style: italic;
+    width: 100%;
+    font-family: "Poppins";
+}
+
+.card-body {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card a {
+    font-size: 1em;
+    padding: 1px 10px;
+    border-radius: 0;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.catalog-dekstop {
+    width: 75%;
+    height: 180px;
+}
+
+.catalog-mobile {
+    width: 25%;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.4em;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "Lexend";
+}
+
+.catalog-text p {
+    font-family: "Poppins";
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 1em;
+    height: 130px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.view-all {
+    border: 3px solid #202020 !important;
+}
+
+.view-all:hover {
+    border: 3px solid #202020 !important;
+}
+
+.dropdown-menu button {
+    width: 90%;
+    margin-top: 5px;
+}
+
+.badge {
+    width: auto !important;
+    font-family: "Lexend";
+    font-size: 12px;
+    height: auto !important;
+}
+
+button,
+a {
+    box-shadow: none !important;
+}
+
+.filterDiv {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.filterDiv.show {
+    display: block !important;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .catalog .filter {
+        display: initial !important;
+    }
+
+    .carousel-caption {
+        left: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+        right: 0 !important;
+        flex-direction: column !important;
+        top: 30% !important;
+    }
+
+    .catalog-text p {
+        text-align: center;
+    }
+
+    .dropdown {
+        text-align: right;
+    }
+
+    .dropdown button {
+        font-size: 13px !important;
+    }
+
+    .dropdown-menu {
+        width: 10%;
+    }
+
+    .dropdown-menu button {
+        font-size: 13px !important;
+    }
+
+}
