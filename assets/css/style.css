@@ -812,7 +812,7 @@ header {
 
     .hero {
         height: 65vh;
-        margin-top: 12vh;
+        margin-top: 10vh;
     }
 
     .hero-container {
@@ -822,7 +822,7 @@ header {
     }
 
     .background-video {
-        margin-top: 12vh;
+        margin-top: 10vh;
         height: 65vh;
     }
 
