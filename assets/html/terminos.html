@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateWeb Systems</title>
+
+    <!-- IMPORTAMOS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CAMBIAMOS EL ICONO DE INTERNET -->
+    <link rel="icon" href="/assets/images/logotipo.png">
+
+    <!-- CONECTAMOS NUESTRO ARCHIVO CSS -->
+    <link rel="stylesheet" href="/assets/css/catalogo.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- FUENTE DE ICONOS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- FUENTE DE LETRAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- ANIMACIONES CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 103vh;
+            object-position: top top;
+            object-fit: cover;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-menu">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4 container-menu">
+                <div class="menu-links">
+                    <a href="index.html"><i class='bx bx-home-alt'></i> Inicio</a>
+                    <a href="catalogo.html"><i class='bx bx-grid-alt'></i> Catalogo</a>
+                    <a href="#categories"><i class='bx bx-category-alt'></i> Categorias</a>
+                    <a href="contact.html"><i class='bx bx-phone'></i> Contacto</a>
+                </div>
+                <div class="menu-social-links">
+                    <a href="https://www.instagram.com/createweb.systems/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.facebook.com/create.web.systems?mibextid=ZbWKwL"><i
+                            class='bx bxl-facebook'></i></a>
+                    <a href="https://www.tiktok.com/@createweb_systems"><i class='bx bxl-tiktok'></i></a>
+                    <a href="https://www.youtube.com/@CreateWeb.Systems"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid" style="display: flex;">
+                <a href="index.html"><img class="menu-logo" style="width: 100px" src="assets/images/logo.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <nav>
+        <a class="animate__animated animate__fadeInRight" href="https://www.instagram.com/createweb.systems/"><i
+                class='bx bxl-instagram'></i></a>
+        <a class="animate__animated animate__fadeInRight"
+            href="https://www.facebook.com/create.web.systems?mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+        <a class="animate__animated animate__fadeInRight" href="https://www.tiktok.com/@createweb_systems"><i
+                class='bx bxl-tiktok'></i></a>
+        <a class="animate__animated animate__fadeInRight" href="https://www.youtube.com/@CreateWeb.Systems"><i
+                class='bx bxl-youtube'></i></a>
+    </nav>
+
+    <header>
+        <div class="header-container container">
+            <div class="row">
+                <div class="col-md-6" style="width: 40%;">
+                    <div class="header-logo animate__animated animate__fadeInLeft">
+                        <a href="index.html"><img src="/assets/images/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-6" style="width: 60%;">
+                    <div class="navbar animate__animated animate__fadeInRight">
+                        <ul class="navbar-nav">
+                            <li><a href="/index.html">Inicio</a></li>
+                            <li><a href="/assets/html/about.html">Sobre Nosotros</a></li>
+                            <li><a href="/assets/html/service.html">Servicios</a></li>
+                            <li><a href="/assets/html/portafolios.html">Portafolios</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-container">
+            <video id="backgroundVideo" muted loop autoplay class="background-video">
+                <source src="/Intro.mp4" type="video/mp4">
+            </video>
+            <div class="hero-buttons animate__animated animate__fadeInUp">
+                <button class="one"><a href="#" class="cotizar">COTIZAR PROYECTO</a></button>
+                <button class="two"><a href="#" class="rediseño">QUIERO REDISEÑAR</a></button>
+                <button class="three"><a href="#" class="proyecto">SOLICITAR PROYECTO</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="term">
+        <div style="padding: 80px 15px;" class="terms-container container">
+            <div class="term-title">
+                <h3>TÉRMINOS Y CONDICIONES</h3>
+            </div>
+            <p>Bienvenido a <strong>CreateWeb Systems</strong>. Al acceder y navegar por este sitio web, aceptas
+                cumplir y estar sujeto a
+                los siguientes términos y condiciones. Si no estás de acuerdo con estos términos, te recomendamos no
+                utilizar este sitio web.</p>
+            <div class="terms-content">
+                <ol>
+                    <li>Propósito del Sitio Web</li>
+                    <p><strong>CreateWeb Systems</strong> es una empresa que se dedica al desarrollo de sitios web y
+                        sistemas. Este sitio tiene como objetivo mostrar los proyectos y trabajos realizados por la
+                        empresa para informar a posibles clientes sobre nuestras habilidades y servicios.</p>
+                    <li>Uso de Plantillas y Ejemplos</li>
+                    <p>Las páginas web mostradas en <strong>CreateWeb Systems</strong> son ejemplos o plantillas que
+                        reflejan las capacidades de diseño y desarrollo de la empresa. No representan proyectos
+                        reales
+                        de clientes a menos que se indique lo contrario. Estas plantillas están destinadas a mostrar
+                        la
+                        calidad de nuestro trabajo, y no deben interpretarse como trabajos finales entregados a un
+                        cliente específico.</p>
+                    <li>Propiedad Intelectual</li>
+                    <p>Todo el contenido mostrado en el sitio, incluidos los proyectos, plantillas, diseños, textos,
+                        imágenes, gráficos, logotipos y videos, son propiedad exclusiva de <strong>CreateWeb
+                            Systems</strong>, salvo que se indique lo contrario. Está prohibido copiar, reproducir,
+                        distribuir o modificar cualquier contenido sin el permiso expreso de la empresa.</p>
+                    <li>Uso del Sitio Web</li>
+                    <p>El acceso a este sitio es gratuito. No obstante, cualquier mal uso del contenido, como su
+                        distribución sin autorización o la utilización con fines comerciales, está estrictamente
+                        prohibido. Nos reservamos el derecho de restringir o bloquear el acceso a cualquier persona
+                        que
+                        incumpla estos términos.</p>
+                    <li>Limitación de Responsabilidad</li>
+                    <p>La información y el contenido proporcionados en este sitio son para fines informativos. Si
+                        bien
+                        nos esforzamos por mantener la exactitud y actualidad de la información, <strong>CreateWeb
+                            Systems</strong> no asume responsabilidad por errores, omisiones o cambios en el
+                        contenido.
+                        No garantizamos la disponibilidad continua del sitio web ni de su contenido.</p>
+                    <li>Enlaces a Terceros</li>
+                    <p>Este sitio web puede contener enlaces a sitios web de terceros que son proporcionados solo
+                        como
+                        referencia. <strong>CreateWeb Systems</strong> no se responsabiliza del contenido de estos
+                        sitios ni de su funcionamiento.</p>
+                    <li>Cambios en los Términos</li>
+                    <p>Nos reservamos el derecho a modificar o actualizar estos términos en cualquier momento. Te
+                        recomendamos revisar esta página periódicamente para estar informado de cualquier cambio.
+                    </p>
+                    <li>Contacto</li>
+                    <p>Para cualquier consulta relacionada con estos términos, puedes contactarnos a través de <a
+                            href="mailto:createweb.systems@gmail.com">createweb.systems@gmail.com</a> o al número <a
+                            href="https://wa.me/+51923063096?text=Hola,%20te%20gustaría%20obtener%20más%20información?">+51923063096</a>
+                    </p>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" style="padding: 0 !important;">
+        <div class="contact-container container" style="max-width: 1600px !important; padding-top: 40px !important;">
+            <div class="contact-title">
+                <h3>CONTACTANOS</h3>
+            </div>
+            <div class="form" style="padding-top: 60px;">
+                <div class="contact-info">
+                    <h3 class="title">Hablemos</h3>
+                    <p class="text">
+                        Comunicate con nosotros dejandonos un mensaje en nuestras redes sociales, llamanos o envianos un
+                        email, te responderemos lo antes posible para brindarte el mejor servicio.
+                    </p>
+                    <div class="info">
+                        <div class="information">
+                            <p>Visitanos en : createwebsystems.com</p>
+                        </div>
+                        <div class="information">
+                            <p>Dejanos un correo : createwebsystems@cws.com</p>
+                        </div>
+                        <div class="information">
+                            <p>Llamanos : 923063096</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <p>Siguenos en nuetras redes</p>
+                        <div class="social-icons">
+                            <a href="#">
+                                <i class='bx bxl-facebook-square'></i>
+                            </a>
+                            <a href="#">
+                                <i class='bx bxl-youtube'></i>
+                            </a>
+                            <a href="#">
+                                <i class='bx bxl-instagram-alt'></i>
+                            </a>
+                            <a href="#">
+                                <i class='bx bxl-tiktok'></i>
+                            </a>
+                        </div><br>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+                    <form action="index.html" autocomplete="off">
+                        <h3 class="title">Contacto</h3>
+                        <div class="input-container">
+                            <input type="text" name="name" class="input" />
+                            <label for="">Ingresa aqui tu nombre</label>
+                            <span>Ingresa aqui tu nombre</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input" />
+                            <label for="">Ingresa aqui tu email</label>
+                            <span>Ingresa aqui tu email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="phone" class="input" />
+                            <label for="">Ingresa tambien tu numero de telefono</label>
+                            <span>Ingresa tambien tu numero de telefono</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input"></textarea>
+                            <label for="">Detallanos el tema que desea tratar</label>
+                            <span>Detallanos el tema que desea tratar</span>
+                        </div>
+                        <input type="submit" value="Enviar" class="btn" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container" style="max-width: 1500px;">
+            <div class="row footer-content" data-aos="slide-up">
+                <div class="col-md-3">
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="/assets/images/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="important">
+                        <h3>ENLACES</h3>
+                        <ul>
+                            <li><a href="catalogo.html"><i class='bx bxs-chevron-right'></i> Catalogo</a></li>
+                            <li><a href="#categories"><i class='bx bxs-chevron-right'></i> Categorias</a></li>
+                            <li><a href="contact.html"><i class='bx bxs-chevron-right'></i> Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="links">
+                        <h3>SIGUENOS</h3>
+                        <div class="social">
+                            <a href="https://www.instagram.com/createweb.systems/"><i class='bx bxl-instagram'></i></a>
+                            <a href="https://www.facebook.com/create.web.systems?mibextid=ZbWKwL"><i
+                                    class='bx bxl-facebook'></i></a>
+                            <a href="https://www.tiktok.com/@createweb_systems"><i class='bx bxl-tiktok'></i></a>
+                            <a href="https://www.youtube.com/@CreateWeb.Systems"><i class='bx bxl-youtube'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="email-us">
+                        <h3>Coctactanos</h3>
+                        <div class="whatsapp">
+                            <a href="https://wa.me/+51923063096?text=Hola,%20te%20gustaría%20obtener%20más%20información?"
+                                target="_blank"><i class='bx bxl-whatsapp'></i>+51 923063096</a>
+                            <a href="mailto:createweb.systems@gmail.com" target="_blank"><i
+                                    class='bx bx-envelope'></i>createweb.systems@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row links">
+                <div class="col-md-4" style="text-align: center;border-right: 1px solid #afafaf;">
+                    <div class="terms">
+                        <a href="terminos.html" target="_blank">
+                            <h4>Términos y Condiciones</h4>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4" style="text-align: center;border-right: 1px solid #afafaf;"">
+                <div class=" privacy">
+                    <a href="politica.html" target="_blank">
+                        <h4>Politica de Privacidad</h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4" style="text-align: center;">
+                <div class="help">
+                    <a href="https://wa.me/+51923063096?text=Hola,%20te%20gustaría%20obtener%20más%20información?"
+                        target="_blank">
+                        <h4>Ayuda</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </footer>
+
+    <!-- QUERYS DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- SCRIPT DE LAS ANIMACIONES CSS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            if (window.scrollY > 0) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+
+</html>

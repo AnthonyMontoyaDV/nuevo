@@ -1,0 +1,390 @@
+.product-card {
+    background: #101010;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family: "Poppins";
+    width: 100% !important;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.portafolio-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portafolio-title h2 {
+    font-family: "Paytone One";
+    background: linear-gradient(30deg, #E97A23, #FFD757);
+    -webkit-background-clip: text;
+    background-clip: auto;
+    font-size: 3em;
+    -webkit-text-fill-color: transparent;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.product-categories {
+    margin-bottom: 15px;
+}
+
+.category {
+    display: inline-block;
+    color: #ffffff;
+    font-family: "Lexend";
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0 5px 5px 0;
+}
+
+.dropdown {
+    font-family: "Poppins";
+}
+
+.view-product-btn {
+    color: #ffffff;
+    font-size: 1rem;
+    background: none;
+    padding: 7px 20px;
+    border: 3px solid #E97A23;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-product-btn:hover {
+    background-color: #E97A23;
+    color: #101010;
+}
+
+.load-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.load-button button {
+    outline: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 100px;
+    background-color: #101010;
+    color: #ffffff;
+    border: 3px solid #E97A23;
+    transition: ease-in-out .2s;
+}
+
+.load-button button:hover {
+    background-color: #E97A23;
+    color: #101010;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all .3s ease-in-out;
+}
+
+.slide-up {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn {
+    border: none !important;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid #E97A23 !important;
+    font-family: "Poppins";
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: #E97A23 !important;
+    border: 1px solid #E97A23 !important;
+    font-weight: 500;
+    color: #101010;
+}
+
+.btn:hover {
+    background-color: #E97A23;
+    box-shadow: none !important;
+    border: 1px solid #E97A23 !important;
+    font-weight: 500;
+    color: #101010;
+}
+
+.dropdown-menu.show {
+    width: 21% !important;
+    background-color: #101010;
+    padding: 10px;
+}
+
+.dropdown-menu.show li {
+    margin-top: 10px;
+    border-radius: 5px !important;
+    cursor: pointer;
+}
+
+.dropdown-menu.show li a {
+    padding: 7px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.term {
+    background-color: #000000;
+    padding: 50px 0;
+    font-family: "Poppins";
+}
+
+.term-title h3 {
+    font-family: "Paytone One";
+    background: linear-gradient(30deg, #E97A23, #FFD757);
+    -webkit-background-clip: text;
+    background-clip: auto;
+    font-size: 3em;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 60px;
+}
+
+.term li {
+    color: #E97A23;
+    font-size: 1.2em;
+}
+
+.term ul {
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.term ul li {
+    font-size: 1.1em !important;
+    list-style: inside;
+}
+
+.term p {
+    font-size: 1.3em;
+    color: #ffffff;
+    font-family: "Lexend";
+    text-align: justify;
+}
+
+.term p a {
+    color: #FFD757;
+    transition: ease-in-out .3s;
+}
+
+.do {
+    background-color: #000000;
+}
+
+.do-mobile{
+    background-color: #000000;
+}
+
+.do-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.do-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #101010;
+    border-radius: 10px;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+.do-card img {
+    width: 40%;
+    background-color: #FFD757;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.do-card h4 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.do-card a {
+    text-decoration: none;
+    background: linear-gradient(30deg, #E97A23, #FFD757);
+    color: #101010;
+    font-family: "Lexend";
+    padding: 5px 20px;
+    font-weight: 500;
+    border-radius: 100px;
+}
+
+.choose{
+    background-color: #000000;
+    font-family: "Poppins";
+}
+
+.choose-title h3 {
+    width: 100%;
+    font-family: "Paytone One";
+    background: linear-gradient(30deg, #E97A23, #FFD757);
+    -webkit-background-clip: text;
+    background-clip: auto;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+}
+
+.choose-content{
+    background-color: #101010;
+    padding: 10px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 240px;
+}
+
+.choose-content-header{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.choose-content-header img{
+    width: 100px;
+    object-fit: cover;
+    background-color: #FFD757;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.choose-content-header h4{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+}
+
+.choose-desc p{
+    text-align: justify;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 950px){
+    .hero {
+        height: 65vh;
+        margin-top: 3vh;
+    }
+
+    .choose-title h3{
+        font-size: 10vw;
+    }
+
+    .faq{
+        padding: 10px 0 !important;
+    }
+
+    .service-desc{
+        height: auto;
+    }
+
+    .do-container .row{
+        flex-wrap: nowrap;
+    }
+
+    .do-container{
+        gap: 10px;
+    }
+
+    .do-container .row .col-md-6{
+        flex-shrink: initial;
+    }
+
+    .do-card{
+        width: 100%;
+    }
+
+    .do{
+        display: none;
+    }
+
+    .do-mobile{
+        display: inline-block !important;
+        padding: 50px 0;
+    }
+
+    .portafolio-title h2{
+        font-size: 10vw;
+    }
+
+    .button-category{
+        font-size: 10px;
+        padding: 7px 10px;
+    }
+
+    .dropdown-menu.show li a{
+        font-size: 12px;
+    }
+
+    .dropdown-menu.show{
+        width: 40vw !important;
+    }
+
+    .dropdown-menu.show li{
+        margin-top: 5px !important;
+    }
+}
